@@ -53,7 +53,7 @@ func (app *App) routes() {
 	app.Router.POST("/token", app.token)
 	app.Router.POST("/detoken", app.detoken)
 	app.Router.POST("/batch/token", app.batchToken)
-	app.Router.POST("/batch/detoken", app.detoken)
+	app.Router.POST("/batch/detoken", app.batchDetoken)
 }
 
 func (app *App) token(c *gin.Context) {
